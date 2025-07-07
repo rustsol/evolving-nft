@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Evolving NFT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Evolving NFT generates unique, fully onchain SVG NFTs that evolve over time based on the user’s interactions with the Monad blockchain.
 
-## Available Scripts
+Each NFT starts as a minimal creature and visually mutates through actions like Feed, Train, Pet, and Anger. Traits such as size, wings, spikes, and aura change as the user interacts.
 
-In the project directory, you can run:
+All traits and interaction history are stored directly inside the smart contract — no databases, no offchain storage, and no IPFS.
 
-### `npm start`
+Every app interaction triggers an onchain transaction that evolves the NFT and builds its permanent, verifiable history.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Mint fully onchain, generative SVG NFTs without relying on external hosting.
+- Each NFT evolves visually and by traits based on real onchain user activity.
+- Users can perform actions such as Feed, Train, Pet, and Anger that trigger visual and trait mutations.
+- Users can transfer NFTs between wallets, and each transfer is recorded as part of the NFT’s evolution.
+- View detailed onchain interaction history including feeds, training, pets, and transfers.
+- Copy complete metadata for external use or verification.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Problem & Solutions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Static NFTs**  
+   Most NFT collections are static images that do not reflect the owner’s engagement or activity.  
+   *Evolving NFT addresses this by creating living NFTs that change over time, making ownership dynamic and meaningful.*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Proof of participation**  
+   Evolving NFTs can be utilized as a visual badge that represents a user’s participation and engagement on the Monad chain.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **No external storage reliance**  
+   All data, including the SVG art and metadata, is generated and stored fully onchain. There is no reliance on IPFS or other external storage solutions.
 
-### `npm run eject`
+4. **Gamified identity**  
+   The NFTs function as evolving, gamified avatars that turn onchain activity into a personal and interactive experience.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. **Interaction tracking**  
+   The system provides a complete onchain log of user interactions (feeds, training, transfers), which can be used for ranking, scoring, or participation badges.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
+git clone - https://github.com/rustsol/evolving-nft
+yarn install
+yarn start
