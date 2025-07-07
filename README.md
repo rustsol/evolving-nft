@@ -41,6 +41,9 @@ Every app interaction triggers an onchain transaction that evolves the NFT and b
 
 
 ## Installation
+
 git clone - https://github.com/rustsol/evolving-nft
+
 yarn install
+
 yarn start
