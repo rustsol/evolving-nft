@@ -350,7 +350,9 @@ function App() {
                   ))}
                 </div>
               )}
+              
             </div>
+            
 
             {/* Split View: Preview Left, Actions Right */}
             {selectedNFT && (
@@ -368,7 +370,17 @@ function App() {
             )}
           </div>
         )}
+        
       </main>
+    <footer style={{ 
+    textAlign: "justify",
+    padding: "1rem",
+    
+  }}>
+    <a href="https://x.com/solanageek" style={{ color: "white" }}>
+      Find me on X
+    </a>
+  </footer>
     </div>
   );
 }
